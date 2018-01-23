@@ -1,0 +1,116 @@
+For now the shell supports adding artists and tracks
+
+Run the program by type in 
+ruby ims.rb
+
+your command will start with 
+im$> 
+
+Type in help for help
+im$> help
+You are DJ, you are cool, what a shame that you need to read the user manual _(:3lz)_
+    ,but here are available commands
+    
+    add artist {name}  
+      Adds a new artist to storage and assign an artist id. 
+      Default artist id is the initials of the artist. 
+      If this is ambiguous then another id is automatically assigned and displayed. 
+      e.g. add artist john osborne. 
+    
+    add track {name} by {artist}
+      Add a new track to storage. add track watching the sky turn green by jo
+
+    play track {name} 
+      Record that an existing track was played at the current time, e.g. play track 13.
+
+    count tracks 
+      Print the total number of tracks
+
+    count tracks by {name}
+      Display how many tracks are known by a certain artist, e.g. count tracks by jo.
+
+    list tracks 
+      Print all tracks' names
+
+    list tracks by {name}
+      Display the tracks played by a certain artist, e.g. list tracks by jo
+
+    exit
+      To exit
+      
+
+
+im$> add artists Ed Sheeran 
+
+            New artist added, 
+            the name and id are 
+            ["Ed Sheeran ", "ES"]
+       
+
+im$> add tracks shape of you by Ed Sheeran
+New track added, 
+            the name, id and artist ID are 
+            ["shape of you ", 0, "ES"]
+
+
+
+if you add the same artist again, you will get a warning
+
+im$> add artists Ed Sheeran
+Artist Ed Sheeran  has already existed
+
+Same when you try to add same track
+
+im$> add tracks shape of you by Ed Sheeran
+Track shape of you  has already existed
+
+im$> play track 0 
+~shape of you
+~~~~~~~~~~
+~
+~~~~
+~~~~~~~~~
+~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+~~~~~~~~~
+~~~~
+~
+~~~~~~~~~~
+~
+~~~~
+~~~~~~~~~
+~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+~~~~~~~~~
+hmmm, your speaker is not working correctly... or maybe nothing is recorded in this track.
+
+
+im$> clear 
+(to reset everything)
+
+im$> info
+There are 1 tracks,
+ID:0, shape of you  by Ed Sheeran
+Recently played:
+1: ID:0, name: shape of you
+2:
+3:
+
+im$> info track 0
+shape of you  by Ed Sheeran
+
+im$> info artist ES
+Ed Sheeran
+
+Tracks:
+shape of you
+
+im$> count tracks by ES
+1
+

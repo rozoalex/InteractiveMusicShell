@@ -1,0 +1,25 @@
+---
+:aToT:
+  ID:
+  - !ruby/object:Artist
+    name: 'Imagine Dragon '
+    discription: ''
+  - 0
+  D:
+  - !ruby/object:Artist
+    name: 'Drake '
+    discription: ''
+  - 1
+:tToA:
+  0: !ruby/object:Track
+    name: 'Whatever it takes '
+    artistIDs:
+    - ID
+  1: !ruby/object:Track
+    name: 'More Life '
+    artistIDs:
+    - D
+:hist:
+- 
+- 
+- 'ID: 0, Name: Whatever it takes '

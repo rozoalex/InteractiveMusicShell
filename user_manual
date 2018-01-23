@@ -1,0 +1,44 @@
+This is the user manual...
+    
+    add artist {name}  
+      Adds a new artist to storage and assign an artist id. 
+      Default artist id is the initials of the artist. 
+      If this is ambiguous then another id is automatically assigned and displayed. 
+      e.g. add artist john osborne. 
+    
+    add track {name} by {artist}
+      Add a new track to storage. add track watching the sky turn green by jo
+
+    play track {name} 
+      Record that an existing track was played at the current time, e.g. play track 13.
+
+    count tracks 
+      Print the total number of tracks
+
+    count tracks by {name}
+      Display how many tracks are known by a certain artist, e.g. count tracks by jo.
+
+    list tracks by {name}
+      Display the tracks played by a certain artist, e.g. list tracks by jo
+
+    info
+      Print out a summary
+
+    info track
+      Display info about a certain track by number
+
+    info artist
+      Display info about a certain artist, by id
+
+    play track
+      Record that an existing track was played at the current time, e.g. play track 13.
+
+    Count tracks
+      Display how many tracks are known by a certain artist, e.g. count tracks by jo 
+    
+    exit
+      To exit
+
+    help
+      For help
+      

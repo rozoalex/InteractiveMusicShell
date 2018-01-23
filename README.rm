@@ -1,0 +1,25 @@
+The interactive music shell is a instance of REPL(Read–Eval–Print Loop) class.
+The class is implemented in REPL.rb. 
+It has 2 hash tables. 
+One maps all artist id to an Artist object and list of track that this person did.
+Another one maps all track number to a Track object that stores a list of artists ids.
+So every time we want to get some information about either a track or an artist,
+the time complexity is limited to constant. 
+Data consistency of the maps were implemented by saving them to a local yml file, 
+using YAMLStore framework. 
+
+Artist object contains a name and a description. 
+The intro function will print out the description.
+
+Track object contains a name and a list of artists id.
+The play function will be called when user types in play command.
+It will print some waves to mimic music playing. 
+
+ReplHelper is a module which contains only functions. They are helpers for REPL. 
+
+PlayedHistory object is basically a stack.
+It will record a stack of recently played tracks. 
+The print method will print out the top tracks according to the limit size.
+The save function will return a list with only limited size,
+and this will be save in the local yml file. 
+
